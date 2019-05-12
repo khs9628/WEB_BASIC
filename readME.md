@@ -15,6 +15,7 @@
 * BBS : JSP 및 BOOTSTRAP을 이용한 기본 게시판 사이트 + MYSQL DataBase
 * JSP : 기초 JSP 프로젝트 연습
 * Cookie/Session : Cookie와 Session 개념에 대한 프로젝트
+* WorkManager : 근태관리 시스템 파일입니다.
 
 
-### :feet: 하루를 기록하다 :feet:
+### 하루를 기록하다 :feet:
