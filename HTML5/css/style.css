@@ -1,0 +1,111 @@
+/* layout */
+body {background: #f1f4fb url(../img/body_bg.gif);}
+#wrap{}
+#header{height:327px; background : url(../img/header_bg.jpg) repeat-x center top;}
+#contents{}
+#footer{height: 200px; background-color: #777; }
+
+
+
+/* container */
+.container {position: relative; width: 990px; /* background-color: rgba(255,255,255,0.4); */ margin: 0 auto;}
+
+
+/* content layout */
+#cont-nav{background: url(../img/cont_nav_bg.png) repeat-x;}
+#cont-tit{background-color: #fff;}
+#cont-ban{background-color: #bceff7;}
+#cont-cont{}
+
+/* quick */
+.quick {text-align: right;}
+/* .quick ul{overflow: hidden;}
+.quick ul li {float: left;} */
+.quick a {color: #fff; padding: 5px 0 0 10px; display: inline-block;}
+/* line-block block 성질(패딩 먹힘)과 inline 성질(1줄)을 둘다 갖는다. */
+.quick a:hover {color: #ccc;}
+
+
+/* title - inline
+.title{ text-align: center; }
+.title p {background-color: #2698cb; font-size:28px; display: inline-block; color: #fff; margin-top:100px; padding: 5px 15px; 
+text-transform: uppercase;}
+.title h1 a{background-color: #4aa8d4; font-size: 18px; color:#fff; text-transform: capitalize; padding: 5px 15px; display: inline-block;} */
+
+/* title - position */
+.title{  }
+.title h1{ position: absolute; left: 440px; top:180px;  }
+.title h1 a{background-color: #4aa8d4; font-size: 18px; color:#fff; text-transform: capitalize; padding: 5px 15px; display: block;  }
+.title p {background-color: #2698cb; font-size:28px; color: #fff; text-transform: uppercase; padding: 5px 15px; position: absolute; left: 230px; top:130px;}
+
+/* icon */
+.icon{position: absolute; left: 360px; top: 220px;}
+.icon ul{overflow: hidden;}
+.icon li{float: left;}
+.icon li a {width: 57px; height: 57px; display: block; margin: 0 3px; background-image: url(../img/icon.png);}
+.icon li a:hover {}
+.icon li.icon-tit1 a{}
+.icon li.icon-tit2 a{background-position: 0 -120px;}
+.icon li.icon-tit3 a{background-position: 0 -240px;}
+.icon li.icon-tit4 a{background-position: 0 -360px;}
+.icon li.icon-tit1 a:hover{background-position: 0 -60px}
+.icon li.icon-tit2 a:hover{background-position: 0 -180px;}
+.icon li.icon-tit3 a:hover{background-position: 0 -300px;}
+.icon li.icon-tit4 a:hover{background-position: 0 -420px;}
+
+/* nav */
+.nav{overflow: hidden; padding: 20px 0;}
+.nav div{ float: left; width: 40%; }
+.nav div h3{ font-size: 18px; color: #25a2d0; }
+.nav div ul{overflow: hidden; }
+.nav div ul li{width: 50%; float: left;}
+.nav div ul li a{color: #333; padding: 3px;}
+.nav div ul li a:hover{background-color: #1a96d0; color: #fff;}
+.nav div.last{ width: 20%;}
+.nav div.last ul li{ width: 100%;}
+
+/* tit */
+.tit{}
+.tit h2{text-align: center; font-size: 39px; color: #2c94c4; letter-spacing: 2px; font-family: "Nanum Brush Script";}
+.tit .btn { position: absolute; right: 0; top: 5px; display: block; width: 57px; height: 57px; background-image: url(../img/icon.png); background-position: 0 -540px;}
+.tit .btn:hover {background-position: 0 -480px;}
+
+
+/* ban */
+.ban{ padding: 20px 0; }
+.ban .ban-prev{position: absolute; left: -30px; top: 65px; width: 23px; height: 43px; background: url(../img/arrow.gif);}
+.ban .ban-prev:hover{background-position: -23px 0;}
+.ban .ban-next{position: absolute; right: -30px; top: 65px; width: 23px; height: 43px; background: url(../img/arrow.gif) 0 -43px;}
+.ban .ban-next:hover{background-position: -23px -43px;}
+.ban ul li a img{border: 4px solid #dcdcdc;}
+.ban ul li a:hover img{border-color: #98bcbc;}
+.ban ul{ overflow: hidden;}
+.ban ul li{ float: left; width:330px; text-align: center; font-size: 0;}
+.ban ul li a{}
+
+/* cont layout */
+.cont{overflow: hidden; padding-top: 30px;}
+.cont .box{ position: relative; width: 289px; height: 364px; float: left; margin: 0 30px 30px 0; padding-right: 30px;}
+.cont .box1{border-right: 1px solid #c8c8c8;}
+.cont .box2{border-right: 1px solid #c8c8c8;}
+.cont .box3{margin-right: 0; padding-right: 0; }
+.cont .box4{border-right: 1px solid #c8c8c8;}
+.cont .box5{border-right: 1px solid #c8c8c8;}
+.cont .box6{margin-right: 0; padding-right: 0; }
+
+/* ico */
+.cont .box .ico-img{ width: 57px; height: 57px; display: block; background-image: url(../img/icon.png); position: absolute; left: 0; top: 6px; cursor: pointer;}
+.cont .box .ico-tit{padding-left: 67px; font-size: 18px; color:  #2c94c4;}
+.cont .box .ico-desc{padding-left: 67px; color: #878787; border-bottom: 1px solid #d0d0d0; padding-bottom: 15px}
+.cont .box1 .ico-img{background-position: 0 -600px;}
+.cont .box2 .ico-img{background-position: 0 -720px;}
+.cont .box3 .ico-img{background-position: 0 -840px;}
+.cont .box4 .ico-img{background-position: 0 -960px;}
+.cont .box5 .ico-img{background-position: 0 -1080px;}
+.cont .box6 .ico-img{background-position: 0 -1200px;}
+.cont .box1 .ico-img:hover{background-position: 0 -660px;}
+.cont .box2 .ico-img:hover{background-position: 0 -780px;}
+.cont .box3 .ico-img:hover{background-position: 0 -900px;}
+.cont .box4 .ico-img:hover{background-position: 0 -1020px;}
+.cont .box5 .ico-img:hover{background-position: 0 -1140px;}
+.cont .box6 .ico-img:hover{background-position: 0 -1260px;}

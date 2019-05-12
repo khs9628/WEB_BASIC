@@ -1,0 +1,21 @@
+/* 여백 초기화*/
+body, div, dl, dd, ul, ol, li, h1, h2, h3, h4, h5, h6 ,
+form, input, legend, textarea, select, fieldset, p , 
+button { margin: 0; padding: 0; }
+
+/* link 초기화 */
+a{color: #273743; text-decoration: none;}
+a:hover{ color: #390; }
+
+/* font 초기화 */
+body, input, textarea, select, button, table {font-family: "나눔 고딕" ,"Nanum Gothic" ,"돋움" , sans-serif;
+font-size: 12px; line-height: 1.7;}
+
+/* 제목 스타일 초기화 */
+h1, h2, h3, h4, h5, h6{ font-size: 12px; font-weight: normal; }
+
+/* 불릿기호 초기화 */
+li, ol, ul{list-style: none;}
+
+/* ir 효과 */
+.ir{width: 0; height: 0; font-size: 0; line-height: 0; overflow: hidden; position: absolute; left: 0; top: 0;}

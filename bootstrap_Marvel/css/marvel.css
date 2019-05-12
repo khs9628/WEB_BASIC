@@ -1,0 +1,63 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+*{
+   font-family: 'Nanumgothic'
+}
+
+a{
+   color: #000000;
+   text-decoration: none;
+}
+a:hover{
+   color: #bbbbbb
+   text-decoration: none;
+   cursor: pointer;
+}
+
+/*네비게이션 색상*/
+.navbar-default{
+   background-color: #000000;
+   border-color: #000000;
+}
+/*네비게이션 제목 색상*/
+.navbar-default .navbar-brand{ 
+   color: #ffffff
+}
+/*네비게이션 제목에 마우스 올렸을 때*/
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus{
+   background-color: transparent;;
+   color: #bbbbbb
+}
+/*현제 선택된 네비게이션 색상 이벤트*/
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+   color: white;
+   background: #000000
+}
+/*네비게이션 글자에 마우스를 올렸을 때*/
+.navbar-default .navbar-nav > li > a:hover
+.navbar-default .navbar-nav > li > a:focus{
+   color: #bbbbbb;
+}
+/*dropdown이 열렸을 때 마우스 색상 이벤트*/
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+   color: #000000;
+   background: white;
+   text-decoration: none;
+}
+/*네비게이션 기본 생삭*/
+.navbar-default .navbar-nav > li > a {
+   color: white;
+}
+/*해상도가 작을 때 드롭다운 아이템에 마우스를 올렸을 때*/
+@media (max-width: 767px){
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a{
+   color: #ffffff;
+   }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus{
+      color: #bbbbbb;
+   }

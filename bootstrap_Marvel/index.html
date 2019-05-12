@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width = device-width", initial-scale ="1">
+   <title>MARVEL</title>
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/marvel.css">
+<body>
+    <style type="text/css">
+       .jumbotron{
+          background-image: url('images/3.jpg');
+          background-size: cover; 
+          text-shadow: black 0.2em 0.2em 0.2em;
+          color: white;
+       }
+ </style>
+    <nav class="navbar navbar-default">
+          <div class="container-fluid">
+             <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                   <span class ="sr-only"></span>
+                  <span class ="icon-bar"></span>
+                  <span class ="icon-bar"></span>
+                </button>
+             <a class="navbar-brand" href="index.html">MARVEL</a>
+             </div>
+             <div class="collapsed navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                   <li class="active"><a href="index.html">Intro<span class="sr-only"></span></a></li>
+                   <li class><a href="movie.html">Movie<span class="sr-only"></a></li>
+                   <li class><a href="history.html">history<span class="sr-only"></a></li>
+                   <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role ="button" aria-haspopup ="true" aria-expended="false">Hero<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                         <li><a href="hero.html?heroName=I">아이언맨</a></li>
+                         <li><a href="hero.html?heroName=C">캡틴아메리카</a></li>
+                         <li><a href="hero.html?heroName=T">토르</a></li>
+                      </ul>
+                </ul>
+                <form class="navbar-form navbar-left">
+                   <div class="form-group">
+                      <input type="text" class="form-control" placeholder="내용을 입력하세요.">
+                   </div>
+                   <button type="submit" class="btn btn-default">검색</button>
+                </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role ="button" aria-haspopup ="true" aria-expended="false">접속하기<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                         <li><a href="loginForm.html">로그인</a></li>
+                         <li><a href="registerForm.html">회원가입</a></li>
+                      </ul>
+                   </li>
+                </ul>
+             </div>
+          </div>
+    </nav>
+   <div class ="container">
+      <div class ="jumbotron">
+         <h1 class="text-center">MARVEL</h1>
+            <p class="text-center">Marvel studio presents</p>
+            <p class="text-center"><a class="btn btn-primary btn-lg" href="history.html" role ="button">HOME</a></p>
+         </div>
+         <div class="row">
+            <div class="col-md-4">
+            <h4>아이언맨</h4>
+               <p>마블 코믹스에서 등장인물. 이명은 아이언맨으로서, 천하무적 아이언맨(The Invincible Iron Man)이라는 수식어가 붙는다. 
+
+억만장자 천재 발명가인 토니 스타크가 심장에 치명적인 상처를 입은 자신의 목숨을 지키며 동시에 세계를 지킬 강화 슈트를 제작하고 과학의 결정체로 만들어진 슈트를 입고 아이언맨이 되어 범죄와 싸워나간다.</p>
+               <p><a class="btn btn-default" data-target="#modal" data-toggle="modal">IRON MAN</a></p>
+            </div>
+            <div class="col-md-4">
+            <h4>캡틴아메리카</h4>
+               <p>캡틴이라는 말에는 어벤저스의 넘버 원이라는 의미도 포함한다. 캡틴 아메리카는 어벤저스의 가장 전통적인 지휘관이다. 이후 어벤저스가 이리저리 분화하면서 리더가 바뀌기도 하지만 어디까지나 일부 분파일 뿐이며 보통 어벤저스의 대장이라고 한다면 당연히 캡틴 아메리카를 말한다.</p>
+               <p><a class="btn btn-default" href="hero.html?heroName=C">Captain A</a></p>
+            </div>
+            <div class="col-md-4">
+            <h4>토르</h4>
+               <p>
+                  헐크나 실버 서퍼와 정면 대결을 펼칠 수 있는 몇 안 되는 힘을 가졌다. 어벤저스에서도 그와 대적할 수 있는 히어로는 사실상 헐크 정도. 묠니르 없이도 근력으로 행성급의 무게를 들어올리거나 끌고 다닐 수 있다.
+오직 자신만 들 수 있으며 외적인 힘으로는 사실상 부술 수 없는 묠니르를 휘두른다. 행성을 부수는 것도 가능.
+비행 능력이 있으며 우주에서도 활동이 가능하다. 심지어 광속보다 빠른 이동을 펼친다.
+
+               </p>
+               <p><a class="btn btn-default" href="hero.html?heroName=T">THOR</a></p>
+            </div>
+        </div>
+            <hr>
+            	<div class ="panel panel-primary">
+            		<div class="panel-heading">
+            			<h3 class="panel-title"><span class="glyphicon glyphicon-pencil">
+            				</span>
+            			&nbsp;&nbsp; 최신 영화 목록</h3>
+            		</div>
+            		<div class="panel-body">
+            			<div class="media">
+            			<div class="media-left">
+            				<a href="movie.html?movieName=A"><img class="media-object" src="images/11.jpg" alt="인피니티워"></a>
+            			</div>
+            			<div class="media-body">
+							<h4 class="media-heading"><a href="movie.html">어벤져스 인피니티워</a>&nbsp;<span class="badge">New</span></h4>
+							새로운 조합을 이룬 어벤져스, 
+ 역대 최강 빌런 타노스에 맞서 세계의 운명이 걸린 
+ 인피니티 스톤을 향한 무한 대결이 펼쳐진다! 
+  
+ 마블의 클라이맥스를 목격하라! 				
+            				</div>
+            			</div>
+            			<div class="media">
+            			<div class="media-left">
+            				<a href="movie.html?movieName=D"><img class="media-object" src="images/dead.jpg" alt="데드풀"></a>
+            			</div>
+            			<div class="media-body">
+							<h4 class="media-heading"><a href="movie.html">데드풀 2</a>&nbsp;<span class="badge">New</span></h4>
+							 		마침내, 그 분이 오신다! 이번엔 혼자가 아니다!
+암치료를 위한 비밀 실험에 참여한 후, 
+ 강력한 힐링팩터 능력을 지닌 슈퍼히어로 데드풀로 거듭난 웨이드 윌슨(라이언 레놀즈), 
+ 운명의 여자친구 바네사(모레나 바카린)와 행복한 미래를 꿈꾸지만 다시 나락으로 떨어지고, 
+ 밑바닥까지 내려간 데드풀은 더 나은 사람이 되기로 결심한다. 
+  
+ 어느 날, 미래에서 시간 여행이 가능한 용병 케이블(조슈 브롤린)이 찾아 오면서 
+ 새로운 사건이 발생하고 데드풀은 생각지도 못한 기상천외 패밀리를 결성하게 되는데...		
+            				</div>
+            			</div>
+            		</div>
+            	</div>
+      </div>
+      <footer style="background-color: #000000; color: #ffffff">
+         <div class="row">
+            <div class="col-sm-4" style="text-align: center;">
+               <img src="images/2.jpg">
+               <h5>Copyright &copy; 1998</h5>
+               <h5>Avenger's</h5>
+            </div>
+            <div class="col-sm-4"style="text-align: center;">
+               <img src="images/groot.jpg">
+               <h5>Copyright &copy; 2011</h5>
+               <p>I AM GROOT</p>
+            </div>
+            <div class="col-sm-4" style="text-align: center;">
+               <img src="images/2.jpg" style="width: 348px; height: 128px;">
+               <h5>Copyright &copy; 1955</h5>
+               <h5>Marvel pictures</h5>
+            </div>
+         </div>
+      </footer>
+      <div class="row">
+         <div class="modal" id="modal" tabindex="-1">
+            <div class="modal-dialog">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        IRONMAN
+                        <button class="close" data-dismiss="modal">&times;</button>
+                     </div>
+                     <div class="modal-body" style="text-align: center;">
+                        토니스타크 영원하라<br>
+                        캡틴아메리카 망해라<br><br>
+                        <img src="images/red.jpg" id="imagepreview">
+                     </div>
+                  </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+</body>
+</html>

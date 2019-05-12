@@ -1,0 +1,122 @@
+inline과 block 의 차이 -----------------------------
+<!-- block -->
+	<div class="quick">
+		<ul>
+			<li><a href="#">Designer Cafe</a></li>
+			<li><a href="#">Publisher Cafe</a></li>
+		</ul>
+</div>
+				
+<!-- inline -->
+<div class="quick">
+	<a href="#">Designer Cafe</a>
+	<a href="#">Publisher Cafe</a>
+</div>	
+
+<!-- css -->
+/* quick */
+.quick {text-align: right;}
+/* .quick ul{overflow: hidden;}
+.quick ul li {float: left;} */
+.quick a {color: #fff; padding: 5px 0 0 10px; display: inline-block;}
+/* line-block block 성질(패딩 먹힘)과 inline 성질(1줄)을 둘다 갖는다. */
+.quick a:hover {color: #ccc;}
+
+
+---------------------image------------------------------
+<!-- 이미지를 표현하는 방법
+1. HTML 태그를 통해서 표현하는 방법 (의미가 있는 이미지)
+<img src="img/header_bg.jpg" alt=""> (alt -> 대체 문자)
+2. CSS 속성을 통해서 표현하는 방법 (의미가 없는 이미지)
+background-image: url(../img/header_bg.jpg);
+3.이미지 스프라이트 방법 (IR효과)
+ -->
+
+--------------------header-------------------------------
+	<!-- inline -->
+	<div class="title">
+			<p>Can See the Future, Only Dream</p>
+			<h1><a href="#">AndS00</a></h1>
+	</div>
+	css
+	.title{ text-align: center; }
+	.title p {background-color: #2698cb; font-size:28px; display: inline-block; color: #fff; margin-top:100px; 
+	padding: 5px 15px;
+	text-transform: uppercase;}
+	.title h1 a{background-color: #4aa8d4; font-size: 18px; color:#fff; text-transform: capitalize; padding: 5px 15px; display: inline-block;}
+				
+	<!-- position -->
+	<div class="title">
+		<p>Can See the Future, Only Dream</p>
+		<h1><a href="#">AndS00</a></h1>
+	</div>
+	css
+	.container {position: relative; width: 990px; background-color: rgba(255,255,255,0.4); margin: 0 auto;}
+
+	/* title - position */
+	.title{  }
+	.title h1{ position: absolute; left: 440px; top:180px;  }
+	.title h1 a{background-color: #4aa8d4; font-size: 18px; color:#fff; text-transform: capitalize; padding: 5px 15px; display: block;  }
+	.title p {background-color: #2698cb; font-size:28px; color: #fff; text-transform: uppercase; padding: 5px 15px; position: absolute; left: 230px; top:130px;}
+
+	-------------------------icon------------------------
+1. img background를 통해서 (비추 - 이미지의 속성을 지정해줘야함)
+<div class="icon">
+	<ul>
+		<li class="icon-tit1"><a href="#"></a></li>
+		<li class="icon-tit2"><a href="#"></a></li>
+		<li class="icon-tit3"><a href="#"></a></li>
+		<li class="icon-tit4"><a href="#"></a></li>
+	</ul>
+</div>
+
+/* icon */
+.icon{position: absolute; left: 360px; top: 220px;}
+.icon ul{overflow: hidden;}
+.icon li{float: left;}
+.icon li a {width: 57px; height: 57px; display: block; margin: 0 3px; background-image: url(../img/icon1.gif);}
+.icon li a:hover {background-image: url(../img/icon1_on.gif);}
+.icon li.icon-tit1 a{}
+.icon li.icon-tit2 a{}
+.icon li.icon-tit3 a{}
+.icon li.icon-tit4 a{}
+
+2.이미지 스프라이트 기법사용 - 하나의 png 파일로 background 의 위치를 이동시켜 이미지를 바꿈
+.
+<div class="icon">
+	<ul>
+		<li class="icon-tit1"><a href="#"><span class="ir">icon1</span></a></li>
+		<li class="icon-tit2"><a href="#"><span class="ir">icon2</span></a></li>
+		<li class="icon-tit3"><a href="#"><span class="ir">icon3</span></a></li>
+		<li class="icon-tit4"><a href="#"><span class="ir">icon4</span></a></li>
+	</ul>
+</div>
+span 태그의 ir class를 통해 이미지의 대한 설명을 해준다.
+ir초기화
+.ir{width: 0; height: 0; font-size: 0; line-height: 0; overflow: hidden; position: absolute; left: 0; top: 0;}
+
+/* icon */
+.icon{position: absolute; left: 360px; top: 220px;}
+.icon ul{overflow: hidden;}
+.icon li{float: left;}
+.icon li a {width: 57px; height: 57px; display: block; margin: 0 3px; background-image: url(../img/icon.png);}
+.icon li a:hover {}
+.icon li.icon-tit1 a{}
+.icon li.icon-tit2 a{background-position: 0 -120px;}
+.icon li.icon-tit3 a{background-position: 0 -240px;}
+.icon li.icon-tit4 a{background-position: 0 -360px;}
+.icon li.icon-tit1 a:hover{background-position: 0 -60px}
+.icon li.icon-tit2 a:hover{background-position: 0 -180px;}
+.icon li.icon-tit3 a:hover{background-position: 0 -300px;}
+.icon li.icon-tit4 a:hover{background-position: 0 -420px;}
+
+3. html로 사용 -> alt 태그로 설명 가능하므로 좋다.
+
+
+--------------------nav----------------------
+.nav{overflow: hidden;}
+.nav div{ float: left; }
+
+--------------가운데 정렬------------
+text-align: center; - inline
+margin : 0; -block

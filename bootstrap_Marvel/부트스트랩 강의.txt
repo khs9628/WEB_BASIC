@@ -1,0 +1,207 @@
+
+<meta name="viewport" content="width = device-width", initial-scale ="1">
+부스트르랩 참조
+<link rel="stylesheet" href="css/bootstrap.css">
+
+점보트론
+<div class ="container">
+	<div class ="jumbotron">
+		<h1 class="text-center">코딩부스터를 소개합니다.</h1>
+		<p class="text-center">코딩 부스터는 IT 교육 사이트 입니다. 다양한 IT 관련 무료 및 유료 강의가 존재합니다.</p>
+		<p class="text-center"><a class="btn btn-primary btn-lg" href="#" role ="button">강의 들으러 가기</a></p>
+	</div>
+</div>
+
+스타일 시트
+<body>
+	 <style type="text/css">
+	 	.jumbotron{
+	 		background-image: url('images/10.jpg');
+	 		background-size: cover; 
+	 		text-shadow: black 0.2em 0.2em 0.2em;
+	 		color: white;
+	 	}
+
+내비게이션 바 - 구성을 보여줌 (html소스중 가장 위쪽에 위치)
+	 <nav class="navbar navbar-default">
+	 		<div class="container-fluid">
+	 			<div class="navbar-header">
+	 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	 					<span class ="sr-only"></span>
+						<span class ="icon-bar"></span>
+						<span class ="icon-bar"></span>
+	 				</button>
+	 			<a class="navbar-brand" href="#">MARVEL</a>
+	 			</div>
+	 			<div class="collapsed navbar-collapse" id="bs-example-navbar-collapse-1">
+	 				<ul class="nav navbar-nav">
+	 					<li class="active"><a href="#">아이언맨<span class="sr-only"></span></a></li>
+	 					<li class><a href="#">캡틴아메리카<span class="sr-only"></a></li>
+	 					<li class><a href="#">토르<span class="sr-only"></a></li>
+	 					<li class="dropdown">
+	 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role ="button" aria-haspopup ="true" aria-expended="false">히어로<span class="caret"></span></a>
+	 						<ul class="dropdown-menu">
+	 							<li><a href="#">스파이더맨</a></li>
+	 							<li><a href="#">타노스</a></li>
+	 							<li><a href="#">그루트</a></li>
+	 						</ul>
+	 				</ul>
+	 				<form class="navbar-form navbar-left">
+	 					<div class="form-group">
+	 						<input type="text" class="form-control" placeholder="내용을 입력하세요.">
+	 					</div>
+	 					<button type="submit" class="btn btn-default">검색</button>
+	 				</form>
+				<ul class="nav navbar-nav navbar-right">
+	 				<li class="dropdown">
+	 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role ="button" aria-haspopup ="true" aria-expended="false">접속하기<span class="caret"></span></a>
+	 						<ul class="dropdown-menu">
+	 							<li><a href="#">로그인</a></li>
+	 							<li><a href="#">회원가입</a></li>
+	 						</ul>
+	 					</li>
+	 				</ul>
+	 			</div>
+	 		</div>
+	 </nav>
+	<div class ="container">
+		<div class ="jumbotron">
+			<h1 class="text-center">MARVEL</h1>
+				<p class="text-center">Marvel studio presents</p>
+				<p class="text-center"><a class="btn btn-primary btn-lg" href="#" role ="button">HOME</a></p>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+
+외부 스타일 시트
+--------
+
+푸터 - 홈페이지에 기타정보를 보여주는 역할을 수행
+	<footer style="background-color: #000000; color: #ffffff">
+			<div class="row">
+				<div class="col-sm-4" style="text-align: center;">
+					<img src="images/1.png">
+					<h5>Copyright &copy; 1998</h5>
+					<h5>Avanger's</h5>
+				</div>
+				<div class="col-sm-4"style="text-align: center;">
+					<img src="images/groot.jpg">
+					<h4>Copyright &copy; 2011</h4>
+					<p>I AM GROOT</p>
+				</div>
+				<div class="col-sm-4" style="text-align: center;">
+					<img src="images/footer.jpg">
+					<h5>Copyright &copy; 1955</h5>
+					<h5>Marvel pictures</h5>
+				</div>
+				
+			</div>
+		</footer>
+
+모달 - 팝업창
+<p><a class="btn btn-default" data-target="#modal" data-toggle="modal">자세히 보기</a></p>
+구현부
+<div class="row">
+			<div class="modal" id="modal" tabindex="-1">
+				<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								IRONMAN
+								<button class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body" style="text-align: center;">
+								토니스타크 영원하라<br>
+								캡틴아메리카 망해라<br><br>
+								<img src="images/red.jpg" id="imagepreview" style="width: 256px; height: 256px;1">
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+
+인용구- 문장을 멋지게 표현 <blockquote>
+<div class="panel-footer">
+                  <blockquote>&nbsp;&nbsp;도르마무 거래를 하러왔다.</blockquote>
+                </div>
+            </div>
+스타일 시트를 통해 인용구를 멋지게 꾸밀수있음
+style type="text/css">
+    blockquote{
+      background: #f9f9f9;
+      border-left: 10px solid #cccccc;
+      margin: 1.5em 10px;
+      padding: 0.5em 10px ;
+      quotes: "\201C" "\201D" "\2018" "\2019"; 
+    }
+    blockquote:before{
+      color:#cccccc;
+      content: open-quote;
+      font-size: 3em;
+      line-height: 0.1em; 
+      margin-left: 0.7em;
+      vertical-align: -0.4em;
+    }
+
+    blockquote:after{
+      color:#cccccc;
+      content: close-quote;
+      font-size: 3em;
+      line-height: 0.1em; 
+      margin-left: 0.25em;
+      vertical-align: -0.4em;
+  </style>
+
+리스트 그룹 - 같은 성질을 가진 목록을 담는 하나의 그룹
+      <div class="container">
+        <div class="row">
+          <ul class="list-group">
+            <a href="#" class="list-group-item active">아이언맨</a>
+            <a href="#" class="list-group-item">팔콘</a>
+            <a href="#" class="list-group-item">워머신</a>
+            <a href="#" class="list-group-item">헐크</a>
+          </ul>
+        </div>
+      </div>
+
+동영상 불러오기 - 유투브나  네이버Tv등의 동영상을 불러온다
+<div class="row">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/G4ekYbwl3vI(유투브 id값)"></iframe>
+          </div>
+        </div>
+
+소스코드 작성하기
+<pre> 입력한 그대로 웹사이트에 출력된다.
+   <div class="row">
+          <p> Hello world! </p>
+          <pre class="pre-scrollable">
+#include &lt;stdio.h&gt;
+int main(void){
+printf("Hello World!");
+}
+          </pre>
+        </div>
+
+form 태그
+
+1. 댓글 구현
+<div class="container">
+        <hr>
+        <form class="form-horizontal">
+          <div class="form-group">
+          <label>댓글: </label>
+          <textarea class="form-control" id="commentContent" name="commentContent"></textarea>
+          <br></br>
+          <button type="submit" class="btn pull-right">등록</button>
+          <hr>
+           </div>
+        </form>
+      </div>
+
+로그인 구현 (중요)/회원가입 동일
+- google에  bootstrap login form 검색후 
+html에 <container> 붙여넣기.
+css파일은 style 태그를 통해 붙여넣기.
+js파일은 script 태그를 통해 붙여넣기.
+

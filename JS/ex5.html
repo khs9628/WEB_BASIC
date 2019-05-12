@@ -1,0 +1,40 @@
+<!--객체와 반복문-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>object</h1>
+    <h2>create</h2>
+    <script>
+    var hyunsoo ={
+      "hobby" = "games",
+      "play" = "list"
+    }
+    document.write("hobby : " + hyunsoo.hobby +"<br>");
+    document.write("play : " + hyunsoo.play +"<br>");
+    hyunsoo.book ="poka";
+    document.write("book : " + hyunsoo.book +"<br>");
+    hyunsoo["datalist"] ="takgo"
+    document.write("datalist : " + hyunsoo["datalist"] +"<br>");
+    </script>
+    <h2> Iterate </h2>
+    <script>
+    for(var key in hyunsoo){
+      document.write(key+'<br>')
+    }
+    </script>
+
+    <h2>Property & method </h2>
+    <script>
+    hyunsoo.showAll = function(){
+      for(var key in this){
+        document.write(key':' + this[key]+'<br>');
+       
+    }
+      hyunsoo.showAll();
+    </script>
+  </body>
+</html>

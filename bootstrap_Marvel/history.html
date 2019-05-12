@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width = device-width", initial-scale ="1">
+   <title>MARVEL</title>
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/marvel.css">
+<body>
+  <style type="text/css">
+    blockquote{
+      background: #f9f9f9;
+      border-left: 10px solid #cccccc;
+      margin: 1.5em 10px;
+      padding: 0.5em 10px ;
+      quotes: "\201C" "\201D" "\2018" "\2019"; 
+    }
+    blockquote:before{
+      color:#cccccc;
+      content: open-quote;
+      font-size: 3em;
+      line-height: 0.1em; 
+      margin-left: 0.7em;
+      vertical-align: -0.4em;
+    }
+
+    blockquote:after{
+      color:#cccccc;
+      content: close-quote;
+      font-size: 3em;
+      line-height: 0.1em; 
+      margin-left: 0.25em;
+      vertical-align: -0.4em;
+  </style>
+    <nav class="navbar navbar-default">
+          <div class="container-fluid">
+             <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                   <span class ="sr-only"></span>
+                  <span class ="icon-bar"></span>
+                  <span class ="icon-bar"></span>
+                </button>
+             <a class="navbar-brand" href="index.html">MARVEL</a>
+             </div>
+             <div class="collapsed navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                   <li class="active"><a href="index.html">Intro<span class="sr-only"></span></a></li>
+                   <li class><a href="movie.html">Movie<span class="sr-only"></a></li>
+                   <li class><a href="#">history<span class="sr-only"></a></li>
+                   <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role ="button" aria-haspopup ="true" aria-expended="false">Hero<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                         <li><a href="hero.html?heroName=I">아이언맨</a></li>
+                         <li><a href="hero.html?heroName=C">캡틴아메리카</a></li>
+                         <li><a href="hero.html?heroName=T">토르</a></li>
+                      </ul>
+                </ul>
+                <form class="navbar-form navbar-left">
+                   <div class="form-group">
+                      <input type="text" class="form-control" placeholder="내용을 입력하세요.">
+                   </div>
+                   <button type="submit" class="btn btn-default">검색</button>
+                </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role ="button" aria-haspopup ="true" aria-expended="false">접속하기<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                         <li><a href="loginForm.html">로그인</a></li>
+                         <li><a href="registerForm.html">회원가입</a></li>
+                      </ul>
+                   </li>
+                </ul>
+             </div>
+          </div>
+    </nav>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                <span class="glyphicon glyphicon-tags"></span>
+                  &nbsp;&nbsp; Marvel의 역사
+                </h3>
+              </div>
+              <div class="panel-body">
+                 <div class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="images/doctor.png" alt="역사 이미지">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading"></h4><br>
+                    마블은 19--년에 창립했습니다.<br>
+                    도르마무 거래를 하러 왔다.
+                  </div>
+              </div>
+          </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>1. ---- </th>
+                    <th>2. -----</th>
+                    <th>3. ----</th>
+                    <th>4. ----</th>
+                 </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>----</td>
+                    <td>1</td>
+                    <td><a href="hero.html?heroName=I">-</a></td>
+                    <td>---</td>
+                  </tr>
+                  <tr>
+                    <td>----</td>
+                    <td>2</td>
+                    <td><a href="hero.html?heroName=C">-</a></td>
+                    <td>--</td>
+                  </tr>
+                  <tr>
+                    <td>---/td>
+                    <td>3</td>
+                    <td><a href="hero.html?heroName=T">-</a></td>
+                    <td>--</td>
+                  </tr>
+                </tbody>
+              </table>
+                <div class="panel-footer">
+                  <blockquote>&nbsp;&nbsp;도르마무 거래를 하러왔다.</blockquote>
+                </div>
+            </div>
+         </div>
+      </div>
+    </div>
+    <footer style="background-color: #000000; color: #ffffff">
+         <div class="row">
+            <div class="col-sm-4" style="text-align: center;">
+               <img src="images/2.jpg">
+               <h5>Copyright &copy; 1998</h5>
+               <h5>Avenger's</h5>
+            </div>
+            <div class="col-sm-4"style="text-align: center;">
+               <img src="images/groot.jpg">
+               <h5>Copyright &copy; 2011</h5>
+               <p>I AM GROOT</p>
+            </div>
+            <div class="col-sm-4" style="text-align: center;">
+               <img src="images/2.jpg" style="width: 348px; height: 128px;">
+               <h5>Copyright &copy; 1955</h5>
+               <h5>Marvel pictures</h5>
+            </div>
+         </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+</body>
+</html>

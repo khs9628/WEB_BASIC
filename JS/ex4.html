@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--리펙토링 중복의 제거-->
+<html>
+<head>
+	<title>WEB1 - JavaScript</title>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1><a href="#">WEB1</a></h1>
+
+  <input type="button" id ="night_day" value="night" onclick="
+var target = document.querySelector('body');
+  if(this.value ==='night'){
+    target.style.backgroundColor = 'black';
+    target.style.color='white';
+    this.value = 'day';
+
+    var links = document.querySelectorAll('a');
+    var i =0;
+    while(i<links.length){
+      links[i].style.color ='powderblue';
+      i=i+1;
+    }
+
+  }
+  else {
+      target.style.backgroundColor = 'white';
+      target.style.color='black';
+      this.value ='night';
+  }
+	">
+	<ol>
+		<li><a href="ex1.html">JavaScript</a></li>
+		<li><a href="ex2.html">JsNode</a></li>
+		<li><a href="ex3.html">JsReact</a></li>
+	</ol>
+	<h2>JavaScript</h2>
+	<p>
+
+	</p>
+	</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width = device-width", initial-scale ="1">
+   <title>MARVEL</title>
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/marvel.css">
+<body>
+    <nav class="navbar navbar-default">
+          <div class="container-fluid">
+             <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                   <span class ="sr-only"></span>
+                  <span class ="icon-bar"></span>
+                  <span class ="icon-bar"></span>
+                </button>
+             <a class="navbar-brand" href="index.html">MARVEL</a>
+             </div>
+             <div class="collapsed navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                   <li class="active"><a href="index.html">Intro<span class="sr-only"></span></a></li>
+                   <li class><a href="movie.html">Movie<span class="sr-only"></a></li>
+                   <li class><a href="#">history<span class="sr-only"></a></li>
+                   <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role ="button" aria-haspopup ="true" aria-expended="false">Hero<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                         <li><a href="hero.html?heroName=I">아이언맨</a></li>
+                         <li><a href="hero.html?heroName=C">캡틴아메리카</a></li>
+                         <li><a href="hero.html?heroName=T">토르</a></li>
+                      </ul>
+                </ul>
+                <form class="navbar-form navbar-left">
+                   <div class="form-group">
+                      <input type="text" class="form-control" placeholder="내용을 입력하세요.">
+                   </div>
+                   <button type="submit" class="btn btn-default">검색</button>
+                </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role ="button" aria-haspopup ="true" aria-expended="false">접속하기<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                         <li><a href="loginForm.html">로그인</a></li>
+                         <li><a href="registerForm.html">회원가입</a></li>
+                      </ul>
+                   </li>
+                </ul>
+             </div>
+          </div>
+    </nav>
+  
+      <div class="container">
+        <div class="row">
+          <ul class="list-group">
+            <a href="#" class="list-group-item active">아이언맨</a>
+            <a href="#" class="list-group-item">팔콘</a>
+            <a href="#" class="list-group-item">워머신</a>
+            <a href="#" class="list-group-item">헐크</a>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/G4ekYbwl3vI"></iframe>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <p> Hello world! </p>
+          <pre class="pre-scrollable">
+#include &lt;stdio.h&gt;
+int main(void){
+printf("Hello World!");
+}
+          </pre>
+        </div>
+      </div>
+
+      <div class="container">
+        <hr>
+        <form class="form-horizontal">
+          <div class="form-group">
+          <label>댓글: </label>
+          <textarea class="form-control" id="commentContent" name="commentContent"></textarea>
+          <br></br>
+          <button type="submit" class="btn pull-right">등록</button>
+          <hr>
+           </div>
+        </form>
+      </div>
+      <footer style="background-color: #000000; color: #ffffff">
+         <div class="row">
+            <div class="col-sm-4" style="text-align: center;">
+               <img src="images/2.jpg">
+               <h5>Copyright &copy; 1998</h5>
+               <h5>Avenger's</h5>
+            </div>
+            <div class="col-sm-4"style="text-align: center;">
+               <img src="images/groot.jpg">
+               <h5>Copyright &copy; 2011</h5>
+               <p>I AM GROOT</p>
+            </div>
+            <div class="col-sm-4" style="text-align: center;">
+               <img src="images/2.jpg" style="width: 348px; height: 128px;">
+               <h5>Copyright &copy; 1955</h5>
+               <h5>Marvel pictures</h5>
+            </div>
+         </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+</body>
+</html>
